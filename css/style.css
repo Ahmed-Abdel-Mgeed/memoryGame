@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa|Righteous');
 /*  font-family: 'Righteous', cursive;
 ---font-family: 'Comfortaa', cursive; */
-
 /*  Global Styles */
+
 * {
     padding: 0;
     margin: 0;
@@ -17,13 +17,17 @@ body {
     background-position-x: center;
     background-position-y: center;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-h1 {
+.info-box {
     text-align: center;
-    font-family: 'Righteous', cursive;
-    font-size: 50px;
-    padding: 10px 0;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    font-size: 44px;
+    padding: 2px 0;
     color: #fff;
     background-color: #fcdd10;
     margin:  6px auto;
@@ -66,4 +70,20 @@ h1 {
 
 .card i{
     backface-visibility: hidden;
+}
+
+.down {
+    position: relative;
+    z-index: 9;
+}
+
+@media all and (max-width: 500px) {
+    .info-box {
+        width: 340px;
+    }
+
+    .game-wraper {
+        width: 340px;
+        height: 255px;
+    }
 }
