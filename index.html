@@ -7,7 +7,9 @@
         <title>Memory Game</title>
         <!-- styels -->
             <!-- font awesome -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/solid.css" integrity="sha384-rdyFrfAIC05c5ph7BKz3l5NG5yEottvO/DQ0dCrwD8gzeQDjYBHNr1ucUpQuljos"
+crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/fontawesome.css" integrity="sha384-u5J7JghGz0qUrmEsWzBQkfvc8nK3fUT7DCaQzNQ+q4oEXhGSx+P2OqjWsfIRB8QT"
             crossorigin="anonymous">
 
             <!-- app styles -->
@@ -70,7 +72,13 @@
 
             </div><!-- .game-wraper -->
 
-            <h2 class="info-box down">Featuers</h2>
+            <h2 class="info-box down">
+                <button class="box" onclick="restGame()">Start Over | <i class="fas fa-redo"></i></button>
+                <div class="box timer">
+                    <span class="min">0<sup>m</sup> :</span>
+                    <span class="sec">0<sup>s</sup></span>
+                </div>
+            </h2>
 
         </section>
         <script src="js/app.js"></script>
