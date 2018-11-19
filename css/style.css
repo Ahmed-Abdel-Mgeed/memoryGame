@@ -36,6 +36,10 @@ body {
     border-radius: 6px;
 }
 
+.wraper {
+    margin: auto;
+}
+
 /*  Game Styles */
 .game-wraper {
     width: 640px;
@@ -50,7 +54,6 @@ body {
     margin: auto;
     padding: 6px;
     perspective: 2000px;
-
 }
 
 .card {
@@ -78,9 +81,11 @@ body {
     justify-content: space-between;
     align-items: start;
     position: relative;
-    z-index: 9;
+    margin: 0;
     padding: 6px;
     background: transparent;
+    position: relative;
+    z-index: 99;
 }
 
 .box {
@@ -102,8 +107,9 @@ button i {
 }
 
 .timer {
-    padding: 6px 6px;
+    padding: 4px 4px 0;
     background: #333;
+    cursor: default;
 }
 
 .box span{
@@ -111,7 +117,6 @@ button i {
 }
 
 .box sup {
-    padding: 2px;
     font-size: 14px;
 }
 
@@ -129,7 +134,7 @@ button i {
     border-radius: 3px;
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 650px) {
     .info-box {
         width: 340px;
     }
@@ -139,3 +144,24 @@ button i {
         height: 255px;
     }
 }
+
+
+@media all and (max-width: 360px) {
+    .info-box {
+        width: 280px;
+        font-size: 33px;
+    }
+
+    .game-wraper {
+        width: 280px;
+        height: 220px;
+    }
+
+    .box {
+        font-size: 20px;
+    }
+    .card i {
+        font-size: 33px;
+    }
+}
+
