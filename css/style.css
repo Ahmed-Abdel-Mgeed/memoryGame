@@ -134,6 +134,30 @@ button i {
     border-radius: 3px;
 }
 
+.footer {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    text-align: center;
+    background-color:  #333 ;
+    color: #f1f1f1;
+    padding: 3px 7px 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 6px 6px 0 0;
+}
+
+
+.footer h4 i {
+    color: tomato;
+    font-size: 16px;
+}
+
+.footer .socials i {
+    font-size: 22px;
+    margin: 3px;
+    color: #539bb8;
+}
+
 @media all and (max-width: 650px) {
     .info-box {
         width: 340px;
@@ -142,6 +166,14 @@ button i {
     .game-wraper {
         width: 340px;
         height: 255px;
+    }
+
+    .footer {
+        left: 15px;
+    }
+
+    .footer h4 {
+        font-size: 14px;
     }
 }
 
